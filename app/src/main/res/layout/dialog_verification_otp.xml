@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00449F"
+            android:text="OTP Authentication"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/edt_otp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:hint="Enter OTP"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:background="@drawable/button1"
+                android:text="Close"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btn_confirm_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:textSize="12sp"
+                android:background="@drawable/button1"
+                android:text="Confirm"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_send_otp_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:text="Didn't receive OTP code?"
+
+            android:inputType="number"/>
+    </LinearLayout>
+
+</LinearLayout>
